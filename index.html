@@ -45,18 +45,18 @@
     <div class="container" id="container-1">
       <div class="card shadow-sm" id="cardProfil">
         <div class="row">
-          <div class="col-md-4 text-center" id="profPic">
+          <div class="col-md-3 text-center" id="profPic">
             <img
-              src="img/futaba-3.jpg"
+              src="img/aku-1.jpg"
               alt="Pramitha Dewi"
               width="170"
               class="rounded-circle img-thumbnail"
             />
           </div>
 
-          <div class="col-md-4">
-            <p id="labelName"></p>
-            <p id="labelRole"></p>
+          <div class="col-md-3">
+            <h3 id="labelName">...</h3>
+            <p id="labelRole">...</p>
 
             <br />
             <button type="button" class="btn btn-primary">Edit</button>
@@ -65,12 +65,20 @@
             </button>
           </div>
 
-          <div class="col-md-4" id="result">
-            <p id="labelAvailability"></p>
-            <p id="labelUsia"></p>
-            <p id="labelLokasi"></p>
-            <p id="labelPengalaman"></p>
-            <p id="labelEmail"></p>
+          <div class="col-md-3" id="daftarProfil">
+            <p>Availability</p>
+            <p>Usia</p>
+            <p>Lokasi</p>
+            <p>Pengalaman</p>
+            <p>Email</p>
+          </div>
+
+          <div class="col-md-3" id="result">
+            <p id="labelAvailability">...</p>
+            <p id="labelUsia">...</p>
+            <p id="labelLokasi">...</p>
+            <p id="labelPengalaman">...</p>
+            <p id="labelEmail">...</p>
           </div>
         </div>
       </div>
@@ -87,6 +95,7 @@
               id="inputName"
               name="inputName"
               class="form-control"
+              placeholder="Isikan nama Anda ..."
             />
           </div>
 
@@ -97,6 +106,7 @@
               id="inputRole"
               name="inputRole"
               class="form-control"
+              placeholder="Isikan status pekerjaan Anda ..."
             />
           </div>
 
@@ -104,12 +114,27 @@
             <label for="labelAvailability" class="form-label"
               >Availability</label
             >
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="inputAvailability"
+              name="inputAvailability"
+            >
+              <option selected>Pilih jam kerja Anda ...</option>
+              <option value="Part Time">Part Time</option>
+              <option value="Full Time">Full Time</option>
+            </select>
+
+            <!-- <label for="labelAvailability" class="form-label"
+              >Availability</label
+            >
             <input
               type="text"
               id="inputAvailability"
               name="inputAvailability"
               class="form-control"
-            />
+              placeholder="Pilih jam kerja Anda ..."
+            /> -->
           </div>
 
           <div class="mb-3">
@@ -119,6 +144,7 @@
               id="inputUsia"
               name="inputUsia"
               class="form-control"
+              placeholder="Isikan usia Anda ..."
             />
           </div>
 
@@ -129,6 +155,7 @@
               id="inputLokasi"
               name="inputLokasi"
               class="form-control"
+              placeholder="Isikan kota domisili Anda ..."
             />
           </div>
 
@@ -139,6 +166,7 @@
               id="inputPengalaman"
               name="inputPengalaman"
               class="form-control"
+              placeholder="Isikan status pengalaman bekerja Anda ..."
             />
           </div>
 
@@ -149,6 +177,7 @@
               id="inputEmail"
               name="inputEmail"
               class="form-control"
+              placeholder="Isikan email Anda ..."
             />
           </div>
 

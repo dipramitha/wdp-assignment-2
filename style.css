@@ -26,3 +26,17 @@
 #btnSubmit {
     margin-top: 11px;
 }
+
+#daftarProfil {
+    font-weight: bold;
+    text-align: right;
+    line-height: 19px;
+}
+
+#result {
+    line-height: 19px;
+}
+
+.form-label {
+    font-weight: bold;
+}
