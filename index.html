@@ -54,9 +54,9 @@
             />
           </div>
 
-          <div class="col-md-4" id="nameRole">
-            <p>...</p>
-            <p>...</p>
+          <div class="col-md-4">
+            <p id="labelName"></p>
+            <p id="labelRole"></p>
 
             <br />
             <button type="button" class="btn btn-primary">Edit</button>
@@ -65,7 +65,13 @@
             </button>
           </div>
 
-          <div class="col-md-4" id="result"></div>
+          <div class="col-md-4">
+            <p id="labelAvailability"></p>
+            <p id="labelUsia"></p>
+            <p id="labelLokasi"></p>
+            <p id="labelPengalaman"></p>
+            <p id="labelEmail"></p>
+          </div>
         </div>
       </div>
     </div>
@@ -73,40 +79,77 @@
     <!-- Section 3 : Form -->
     <div class="container" id="container-2">
       <div class="card shadow-sm" id="cardForm">
-        <form method="post">
+        <form method="post" id="formProfil">
           <div class="mb-3">
-            <label for="pname" class="form-label">Nama</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelName" class="form-label">Nama</label>
+            <input
+              type="text"
+              id="inputName"
+              name="inputName"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="pname" class="form-label">Role</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelRole" class="form-label">Role</label>
+            <input
+              type="text"
+              id="inputRole"
+              name="inputRole"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="pname" class="form-label">Availability</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelAvailability" class="form-label"
+              >Availability</label
+            >
+            <input
+              type="text"
+              id="inputAvailability"
+              name="inputAvailability"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="pname" class="form-label">Usia</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelUsia" class="form-label">Usia</label>
+            <input
+              type="text"
+              id="inputUsia"
+              name="inputUsia"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="pname" class="form-label">Lokasi</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelLokasi" class="form-label">Lokasi</label>
+            <input
+              type="text"
+              id="inputLokasi"
+              name="inputLokasi"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="pname" class="form-label">Pengalaman</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelPengalaman" class="form-label">Pengalaman</label>
+            <input
+              type="text"
+              id="inputPengalaman"
+              name="inputPengalaman"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="pname" class="form-label">Email</label>
-            <input type="text" id="pname" class="form-control" />
+            <label for="labelEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="inputEmail"
+              name="inputEmail"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3 d-flex">
@@ -114,6 +157,7 @@
               type="submit"
               class="btn btn-success flex-fill"
               id="btnSubmit"
+              onclick="displayValue()"
             >
               Submit
             </button>
@@ -124,5 +168,8 @@
 
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Index -->
+    <script src="index.js"></script>
   </body>
 </html>
