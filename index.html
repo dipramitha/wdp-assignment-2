@@ -18,7 +18,7 @@
   <body>
     <!-- Section 1 : Navbar -->
     <nav class="navbar navbar-expand-lg bg-light shadow-sm">
-      <div class="container">
+      <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -42,7 +42,7 @@
     </nav>
 
     <!-- Section 2 : Profil -->
-    <div class="container" style="padding-top: 20px">
+    <div class="container" id="container-1">
       <div class="card shadow-sm" id="cardProfil">
         <div class="row">
           <div class="col-md-4 text-center" id="profPic">
@@ -67,6 +67,58 @@
 
           <div class="col-md-4" id="result"></div>
         </div>
+      </div>
+    </div>
+
+    <!-- Section 3 : Form -->
+    <div class="container" id="container-2">
+      <div class="card shadow-sm" id="cardForm">
+        <form method="post">
+          <div class="mb-3">
+            <label for="pname" class="form-label">Nama</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pname" class="form-label">Role</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pname" class="form-label">Availability</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pname" class="form-label">Usia</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pname" class="form-label">Lokasi</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pname" class="form-label">Pengalaman</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pname" class="form-label">Email</label>
+            <input type="text" id="pname" class="form-control" />
+          </div>
+
+          <div class="mb-3 d-flex">
+            <button
+              type="submit"
+              class="btn btn-success flex-fill"
+              id="btnSubmit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
